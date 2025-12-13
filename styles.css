@@ -1,0 +1,335 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+/* ЗАГОЛОВОК */
+.header__title{
+    padding: 3%;
+    color: #415167;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 54px;
+    font-style: normal;
+    width: 30%;
+    z-index: 1;
+}
+/* СЛОВО КОТОРОЕ ВЫДЕЛЯЕТСЯ */
+.header__title-highlight{
+    background-color: #c7a17a;
+    padding: 1%;
+    color: white;
+}
+.header{
+    display: flex;
+}
+.header__image{
+    width: 45%;
+    height: 100vh; 
+}
+
+/* НАВИГАЦИЯ */
+.nav{
+    width: 25%;
+    background-color:#415167 ;
+    display: flex;
+    align-items: center; 
+}
+.nav__list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    gap: 5%;
+    width: 100%; 
+}
+.nav__link{
+    text-decoration: none;
+    color: white;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+}
+.nav__item {
+    width: 100%;                 
+    display: flex;       
+    justify-content: center;
+    align-items: center; 
+    height: 60px;  
+}
+
+.nav__item:hover{
+   background-color: #6272ad;
+}
+.nav__item:active{
+    background-color: #0c3be7;
+}
+
+/* ОСНОВНАЯ ЧАСТЬ */
+.section__title{
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-size: 30px;
+    color: #415167;
+    text-align: center;
+    padding: 30px;
+}
+
+.card__title{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 24px;
+    font-style: normal;
+}
+.card__text{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: italic;
+}
+.card__price{
+    color: #c7a17a;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 20px;
+    font-style: normal;
+}
+.body{
+    background-color: #EDF0F5;
+}
+.card{
+    background-color: white;
+    margin: 10px;
+}
+
+/* ПЕРВЫЙ РАЗДЕЛ */
+.section__container--about{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.card--about{
+    display: grid;
+    grid-template-rows: 100px 40px 100px;
+    justify-items: center;
+    text-align: center;
+    margin: 5%;
+}
+
+/* ВТОРОЙ РАЗДЕЛ */
+.section--product{
+    background: linear-gradient(90deg,
+        #415167 calc(100% / 3), 
+        #EDF0F5 calc(100% / 3)  
+    );
+}
+.section__container--product{
+    column-count: 2;
+    column-gap: 30px;
+    padding: 0 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card--product{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    
+}
+
+.card__content--product{
+    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(4,auto);
+    justify-items: start;
+}
+/* ТРЕТИЙ РАЗДЕЛ */
+.section--gift{
+    background: linear-gradient(90deg,
+        rgb(209, 213, 220) calc(100% / 3 * 2),  
+        #EDF0F5 calc(100% / 3)  
+    );
+    align-content: center;
+}
+.card--gift{
+    display: flex;
+    margin: 7%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    
+}
+.card__content--gift{
+
+    display:grid ;
+    grid-template-rows: 10% 10% auto 10% 10%;
+    justify-items: start;
+    padding: 10px;
+    
+}
+
+/* ЧЕТВЕРТЫЙ РАЗДЕЛ */
+.section--combo{
+    background: linear-gradient(90deg,
+        #EDF0F5 calc(100% / 3 * 2),
+        #415167 calc(100% / 3)  
+    );
+}
+.section__container--combo{
+    display: flex;
+    justify-content: space-evenly; 
+     
+}
+.card--combo{
+    width: 300px; 
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    
+    
+}
+/* КНОПКИ */
+.button{
+    padding: 1% 3%; 
+    border-width: 0;
+    border-radius: 30px ;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 16px;
+    font-style: normal;
+    text-align: center;
+}
+
+.button--buy{
+    background-color: #c7a17a;
+    color: white;
+}
+.button--buy:focus{
+    background-color: chocolate;
+}
+.button--more{
+    background-color: white;
+    color: #415167;
+}
+.button--more:hover{
+    background-color: chocolate;
+    color: white;
+}
+
+.footer__text{
+
+    color: #6272ad;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 16px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+/* Планшеты (меньше 992px) */
+@media (max-width: 991px) {
+    .section__container--product{
+        column-count: 1;
+    }
+    .header__image{
+        max-height: 50vh;
+    }
+    .nav{
+        min-height: 0;
+    }
+    .section__container--combo{
+        overflow-x: auto;    
+    }
+}
+
+/* Мобильные в альбомной ориентации (меньше 768px) */
+@media (max-width: 767px) {
+    .section--product{
+    background: linear-gradient(90deg,
+        #415167 calc(100% / 4),  
+        #EDF0F5 calc(100% / 4) );
+    }
+    .section--combo{
+    background: linear-gradient(90deg,
+        #EDF0F5 calc(100% / 4 * 3),
+        #415167 calc(100% / 4)  );
+    }
+    .section--gift{
+    background: linear-gradient(90deg,
+        rgb(209, 213, 220) calc(100% / 4), 
+        #EDF0F5 calc(100% / 4) );
+    }
+    .card__image--gift{
+        width: 45%;}
+    .card__content--gift{
+        grid-template-rows: repeat(5,auto);
+    }
+}
+
+/* Мобильные (меньше 576px) */
+@media (max-width: 575px) {
+    .header__title{
+        font-size: 40px;
+    }
+    .header__image{
+        height: 70vh; 
+    }
+    .nav{
+        min-height: 70vh;   
+    }
+    .section__container--about{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .card--gift{
+        align-items: center
+
+    }
+}
+/* Очень маленькие экраны (меньше 400px) */
+@media (max-width: 399px) {
+    .header__title{
+        font-size:25px;
+        width: 50%;
+    }
+    .header__image{
+        width: 50%;
+        height: 50vh;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .nav{ 
+        min-height: 30vh; 
+        width: 100%;
+    }
+    .card__text{
+        font-size: 14px;
+    }
+    .section__title{
+        font-size: 20px;
+    }
+    .card--product{
+        flex-direction: column;
+    }
+}
