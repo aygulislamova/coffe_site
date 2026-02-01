@@ -8,4 +8,4 @@
 - [Публичная страница на GitHub Pages](https://aygulislamova.github.io/coffe_site//)
 
 
-![Alt text](img/qr.png)
+<img width="1968" height="1968" alt="de7c554c71f78c2864259e506d5fe0ad" src="https://github.com/user-attachments/assets/e8a422fc-736c-4189-a133-0be838de588b" />
