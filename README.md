@@ -6,3 +6,6 @@
 
 ## Ссылки
 - [Публичная страница на GitHub Pages](https://aygulislamova.github.io/coffe_site//)
+
+
+![Alt text](img/qr.png)
