@@ -5,21 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>РЕВО-КОФЕ</title>
     <link rel="icon" href="assets/img/LOGO.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mobile.css" media="screen and (max-width: 1024px)">
 </head>
 <body class="body">
     <header class="header">
-        <h1 class="header__title">Твой <span class="header__title-highlight">индивидуальный</span> вкус</h1>
-        <img src="assets/img/banner.png" alt="Баннер с упаковеами кофе" class="header__image">
-        <nav class="header__nav  nav">
-            <ul class="nav__list">
-            <li class="nav__item"><a href="#about" class="nav__link">О Нас</a></li>
-            <li class="nav__item"><a href="#products" class="nav__link">Продукция</a></li>
-            <li class="nav__item"><a href="#gifts" class="nav__link">Подарки</a></li>
-            <li class="nav__item"><a href="#combo" class="nav__link">Наборы</a></li>
+        <div class="header__contant">
+        
+            <h1 class="header__title">Твой <span class="header__title-highlight">индивидуальный</span> вкус</h1>
             
-            </ul>
-        </nav>
+            <button class="menu-toggle" id="menuToggle" aria-label="Открыть меню" aria-expanded="false">
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+                <span class="menu-toggle__line"></span>
+            </button>
+        </div>
+            <img src="assets/img/banner.png" alt="Баннер с упаковеами кофе" class="header__image">
+        
+            
+            <nav class="nav" id="mainNav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#about" class="nav__link">О Нас</a></li>
+                    <li class="nav__item"><a href="#products" class="nav__link">Продукция</a></li>
+                    <li class="nav__item"><a href="#gifts" class="nav__link">Подарки</a></li>
+                    <li class="nav__item"><a href="#combo" class="nav__link">Наборы</a></li>
+                </ul>
+            </nav>
+
     </header>
 <main class="main">
 
@@ -210,10 +222,16 @@
 
      </div>
  </section>
+ <button class="scroll-top" id="scrollTop" aria-label="Наверх">
+        ↑
+ </button>
 </main>
+
+</body>
 
 <footer>
     <p class="footer__text">
         Нынче никто не&nbsp;может себе позволить инициировать звон колоколов
     </p>
 </footer>
+<script src="scripts\menu.js"></script>
